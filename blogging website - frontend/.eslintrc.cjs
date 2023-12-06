@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true  // Add this line
     },
     "extends": [
         "eslint:recommended",
@@ -12,11 +13,13 @@ module.exports = {
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
-          }
+        }
     },
     "plugins": [
         "react"
     ],
     "rules": {
+        // Your rules here
+        "react/prop-types": "off"
     }
-}
+};
